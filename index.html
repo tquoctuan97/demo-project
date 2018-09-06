@@ -39,14 +39,8 @@
                 <li class="menu-item"><a href="#">Course Leads</a></li>
             </ul>
             <div class="btn">
-                <span class="btn-search"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="29px" height="29px">
-                        <path fill-rule="evenodd" fill="rgb(74, 144, 226)" d="M25.256,3.746 C22.842,1.335 19.634,0.007 16.221,0.007 C16.220,0.007 16.221,0.007 16.220,0.007 C12.808,0.007 9.599,1.335 7.185,3.746 C4.772,6.158 3.443,9.364 3.443,12.774 C3.443,15.101 4.063,17.333 5.223,19.283 L0.894,23.607 C0.311,24.190 -0.011,24.966 -0.011,25.790 C-0.011,26.615 0.311,27.390 0.894,27.973 L1.009,28.088 C1.593,28.671 2.369,28.992 3.194,28.992 C4.019,28.992 4.795,28.671 5.379,28.088 L9.707,23.763 C11.658,24.922 13.891,25.541 16.220,25.541 C19.633,25.541 22.842,24.213 25.256,21.802 C27.669,19.391 28.998,16.184 28.998,12.774 C28.998,9.364 27.669,6.158 25.256,3.746 ZM3.818,26.529 C3.652,26.696 3.430,26.788 3.194,26.788 C2.958,26.788 2.737,26.696 2.570,26.529 L2.454,26.414 C2.288,26.247 2.196,26.026 2.196,25.790 C2.196,25.554 2.288,25.333 2.454,25.166 L6.529,21.095 C6.738,21.338 6.957,21.573 7.185,21.802 C7.414,22.030 7.650,22.249 7.893,22.458 L3.818,26.529 ZM23.695,20.243 C21.699,22.238 19.044,23.336 16.221,23.336 C13.397,23.336 10.743,22.238 8.746,20.243 C6.749,18.248 5.649,15.596 5.650,12.774 C5.650,9.953 6.749,7.300 8.746,5.305 C10.743,3.311 13.397,2.212 16.221,2.212 C19.044,2.212 21.699,3.311 23.695,5.305 C25.692,7.300 26.792,9.953 26.792,12.774 C26.791,15.596 25.692,18.248 23.695,20.243 Z" />
-                    </svg></span>
-                <span class="btn-notification"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="25px" height="29px">
-                        <path fill-rule="evenodd" fill="rgb(74, 144, 226)" d="M12.500,29.000 C14.118,29.000 15.441,27.695 15.441,26.100 L9.559,26.100 C9.559,27.695 10.882,29.000 12.500,29.000 ZM22.059,20.300 L22.059,12.325 C22.059,7.830 18.971,4.205 14.706,3.190 L14.706,2.175 C14.706,1.015 13.676,-0.000 12.500,-0.000 C11.324,-0.000 10.294,1.015 10.294,2.175 L10.294,3.190 C6.029,4.205 2.941,7.830 2.941,12.325 L2.941,20.300 L0.000,23.200 L0.000,24.650 L25.000,24.650 L25.000,23.200 L22.059,20.300 ZM19.118,21.750 L5.883,21.750 L5.883,12.325 C5.883,8.700 8.824,5.800 12.500,5.800 C16.176,5.800 19.118,8.700 19.118,12.325 L19.118,21.750 Z" />
-                    </svg></span>
+                <a href="#"><img class="btn-search" src="./img/search.svg"></a>
+                <a href="#"><img class="btn-notification" src="./img/notification.svg"></a>
                 <a href="#"><i class="fas fa-bars menu-responsive"></i></a>
             </div>
 
@@ -79,12 +73,73 @@
                 </tr>
                 <tr>
                     <td class="course-photo-column"><img class="course-photo" src="./img/photo-course-01.png"></td>
-                    <td><span class="course-name">Flash Photography</span><br><span class="course-code">Code: ART001899</span> </td>
-                    <td> <span class="course-category"> Art / Photography</span></td>
-                    <td class="course-creator-column"><img class="avatar-creator" src="img/avatar-creator.png"> <p class="info-creator"><span class="name-creator">Terry Richardson</span><br><span class="course-date">2 weeks ago</span></p></td>
+                    <td><span class="course-name">Flash Photography</span><br><br><span class="course-code">Code:
+                            ART001899</span> </td>
+                    <td><span class="course-category"> Art / Photography</span></td>
+                    <td class="course-creator-column"><img class="avatar-creator" src="img/avatar-creator.png">
+                        <p class="info-creator"><span class="name-creator">Terry Richardson</span><br><span class="created-date">2
+                                weeks ago</span></p>
+                    </td>
                     <td><span class="course-status">DRAFT</span></td>
                     <td><span class="course-slot">0</span></td>
-                    <td><span class="course-action">DRAFT</span>|<span class="course-action">DRAFT</span></td>
+                    <td><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img src="img/divide.svg"><a
+                            href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></td>
+                </tr>
+                <tr>
+                    <td class="course-photo-column"><img class="course-photo" src="./img/photo-course-02.png"></td>
+                    <td><span class="course-name">How to film a short story</span><br><br><span class="course-code">Code:
+                            ART001899</span> </td>
+                    <td><span class="course-category"> Art / Production</span></td>
+                    <td class="course-creator-column"><img class="avatar-creator" src="img/avatar-creator.png">
+                        <p class="info-creator"><span class="name-creator">Terry Richardson</span><br><span class="created-date">2
+                                weeks ago</span></p>
+                    </td>
+                    <td><span class="course-status active">LIVE</span></td>
+                    <td><span class="course-slot active">12</span></td>
+                    <td><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img src="img/divide.svg"><a
+                            href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></td>
+                </tr>
+                <tr>
+                    <td class="course-photo-column"><img class="course-photo" src="./img/photo-course-03.png"></td>
+                    <td><span class="course-name">Flash Photography #2</span><br><br><span class="course-code">Code:
+                            ART001899</span> </td>
+                    <td><span class="course-category"> Art / Photography</span></td>
+                    <td class="course-creator-column"><img class="avatar-creator" src="img/avatar-creator.png">
+                        <p class="info-creator"><span class="name-creator">Terry Richardson</span><br><span class="created-date">2
+                                weeks ago</span></p>
+                    </td>
+                    <td><span class="course-status active">LIVE</span></td>
+                    <td><span class="course-slot active">4</span></td>
+                    <td><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img src="img/divide.svg"><a
+                            href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></td>
+                </tr>
+                <tr>
+                    <td class="course-photo-column"><img class="course-photo" src="./img/photo-course-04.png"></td>
+                    <td><span class="course-name">Fashion Style Making Up</span><br><br><span class="course-code">Code:
+                            ART001899</span> </td>
+                    <td><span class="course-category"> Art / Beauty</span></td>
+                    <td class="course-creator-column"><img class="avatar-creator" src="img/avatar-creator.png">
+                        <p class="info-creator"><span class="name-creator">Terry Richardson</span><br><span class="created-date">2
+                                weeks ago</span></p>
+                    </td>
+                    <td><span class="course-status">DRAFT</span></td>
+                    <td><span class="course-slot">0</span></td>
+                    <td><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img src="img/divide.svg"><a
+                            href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></td>
+                </tr>
+                <tr>
+                    <td class="course-photo-column"><img class="course-photo" src="./img/photo-course-05.png"></td>
+                    <td><span class="course-name">Color Theory #1</span><br><br><span class="course-code">Code:
+                            ART001899</span> </td>
+                    <td><span class="course-category"> Art / Digital</span></td>
+                    <td class="course-creator-column"><img class="avatar-creator" src="img/avatar-creator.png">
+                        <p class="info-creator"><span class="name-creator">Terry Richardson</span><br><span class="created-date">2
+                                weeks ago</span></p>
+                    </td>
+                    <td><span class="course-status active">LIVE</span></td>
+                    <td><span class="course-slot active">4</span></td>
+                    <td><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img src="img/divide.svg"><a
+                            href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></td>
                 </tr>
             </table>
         </div>

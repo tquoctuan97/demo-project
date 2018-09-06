@@ -81,7 +81,7 @@ a {
     justify-content: flex-end;
     align-items: center;
 }
-.menu .btn span{ 
+.btn-search, .btn-notification { 
     padding-left:3em;
 }
 .menu-responsive {
@@ -155,10 +155,10 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    font-size: 20px;
 }
 
 th {
+    font-size: 20px;
     border-bottom: #bdbdbd dotted 2px;
     text-align: left;
     padding: 8px 8px 8px 0px;
@@ -166,7 +166,8 @@ th {
     font-weight: 400;
 }
 
-td {    
+td {
+    font-size: 22px;    
     text-align: left;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -179,10 +180,9 @@ td {
 .course-photo {
 }
 .course-name {
-    font-size:20px;
+    font-size:24px;
     font-weight: bold;
     color: #252525;
-    line-break: 20px;
 }
 .course-code {
 
@@ -190,17 +190,12 @@ td {
 .course-category{
 
 }
-.course-status {
+.course-status, .course-slot {
     border-radius: 5px;
     padding:10px;
     color: #252525;
     background-color: #d6e0ed;
-}
-.course-slot {
-    border-radius: 5px;
-    padding:10px;
-    color: #252525;
-    background-color: #d6e0ed;
+    font-size: 14px;
 }
 .active {
     background-color: #4a90e2;
@@ -210,7 +205,7 @@ td {
 .course-creator-column {
     display: flex;
     width: 100%;
-    height:150px;
+    height:120px;
     align-items: center;
 }
 .avatar-creator {
@@ -221,11 +216,18 @@ td {
     margin-left:10px;
 }
 .name-creator {
+    color:#252525;
+}
+.created-date {
+    font-size: 18px;
+}
+/* Style course status */
+.course-status {
     
 }
 
 .course-action {
-
+    margin: 0px 20px;
 }
 
 /* Responsive */
