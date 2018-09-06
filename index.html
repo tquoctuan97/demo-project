@@ -1,30 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="import" href="top.html">
 </head>
+
 <body>
-    <div class="top center">
-        <div class="top-left">
-            <p>Home • About Em.able</p>
+    <div class="top">
+        <div class="info center">
+            <div class="info-left">
+                <p>Home • About Em.able</p>
+            </div>
+            <div class="info-right">
+                <p><span class="hello">Howdy </span><span class="info-user">Terry Richardson </span>
+                    <a class="info-more" href="#"><i class="fas fa-angle-down"></i></a></i>
+                </p>
+            </div>
         </div>
-        <div class="top-right">
-            <p><span id="hello">Howdy </span><span id="user">Terry Richardson </span><i class="fas fa-angle-down"></i>
+        <nav class="menu center">
+            <div class="logo"><span>em.able</span></div>
+            <ul class="list-menu">
+                <li class="menu-item"><a href="#">My Courses</a></li>
+                <li class="menu-item"><a href="#">My Bookings</a></li>
+                <li class="menu-item"><a href="#">Dashboard</a></li>
+                <li class="menu-item"><a href="#">How it Works</a></li>
+                <li class="menu-item"><a href="#">All Courses</a></li>
+                <li class="menu-item"><a href="#">Blog</a></li>
+                <li class="menu-item"><a href="#">Course Leads</a></li>
+            </ul>
+            <div class="btn">
+                <a href="#"><img class="btn-search" src="./img/search.svg"></a>
+                <a href="#"><img class="btn-notification" src="./img/notification.svg"></a>
+                <a href="#"><i class="fas fa-bars menu-responsive"></i></a>
+            </div>
 
-            </p>
-        </div>
+        </nav>
     </div>
-    <nav class="menu">
-
-    </nav>
+    <section class="banner center">
+        <h1 class="title-course">My Courses</h1>
+        <p class="info-course">3 Categories • 6 Courses</p>
+        <p class="line"></p>
+    </section>
+    <section class="create-course center">
+        <p class="info-create-left">This page contains all your course created listings. You can edit or delete your
+            existing course listings. All course listings will be reviewed by Em.able comittee before course listings
+            can be published, during which will appear as pending for approval.</p>
+        <div class="info-create-right">
+            <a href="#" class="btn-create-course">+ Create a new Course</a>
+        </div>
+    </section>
+    <section class="table center">
+        <div style="overflow-x:auto;">
+            <table>
+                <tr>
+                    <th>PHOTO</th>
+                    <th>COURSE NAME</th>
+                    <th>CATEGORY</th>
+                    <th>CREATOR/DATE</th>
+                    <th>STATUS</th>
+                    <th>SLOT(S)</th>
+                    <th>ACTION</th>
+                </tr>
+                <tr>
+                    <td class="course-photo-column"><img class="course-photo" src="./img/photo-course-01.png"></td>
+                    <td><span class="course-name">Flash Photography</span><br><br><span class="course-code">Code:
+                            ART001899</span> </td>
+                    <td><span class="course-category"> Art / Photography</span></td>
+                    <td class="course-creator-column"><img class="avatar-creator" src="img/avatar-creator.png">
+                        <p class="info-creator"><span class="name-creator">Terry Richardson</span><br><span class="created-date">2
+                                weeks ago</span></p>
+                    </td>
+                    <td><span class="course-status">DRAFT</span></td>
+                    <td><span class="course-slot">0</span></td>
+                    <td><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img src="img/divide.svg"><a
+                            href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></td>
+                </tr>
+                <tr>
+                    <td class="course-photo-column"><img class="course-photo" src="./img/photo-course-02.png"></td>
+                    <td><span class="course-name">How to film a short story</span><br><br><span class="course-code">Code:
+                            ART001899</span> </td>
+                    <td><span class="course-category"> Art / Production</span></td>
+                    <td class="course-creator-column"><img class="avatar-creator" src="img/avatar-creator.png">
+                        <p class="info-creator"><span class="name-creator">Terry Richardson</span><br><span class="created-date">2
+                                weeks ago</span></p>
+                    </td>
+                    <td><span class="course-status active">LIVE</span></td>
+                    <td><span class="course-slot active">12</span></td>
+                    <td><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img src="img/divide.svg"><a
+                            href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></td>
+                </tr>
+                <tr>
+                    <td class="course-photo-column"><img class="course-photo" src="./img/photo-course-03.png"></td>
+                    <td><span class="course-name">Flash Photography #2</span><br><br><span class="course-code">Code:
+                            ART001899</span> </td>
+                    <td><span class="course-category"> Art / Photography</span></td>
+                    <td class="course-creator-column"><img class="avatar-creator" src="img/avatar-creator.png">
+                        <p class="info-creator"><span class="name-creator">Terry Richardson</span><br><span class="created-date">2
+                                weeks ago</span></p>
+                    </td>
+                    <td><span class="course-status active">LIVE</span></td>
+                    <td><span class="course-slot active">4</span></td>
+                    <td><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img src="img/divide.svg"><a
+                            href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></td>
+                </tr>
+                <tr>
+                    <td class="course-photo-column"><img class="course-photo" src="./img/photo-course-04.png"></td>
+                    <td><span class="course-name">Fashion Style Making Up</span><br><br><span class="course-code">Code:
+                            ART001899</span> </td>
+                    <td><span class="course-category"> Art / Beauty</span></td>
+                    <td class="course-creator-column"><img class="avatar-creator" src="img/avatar-creator.png">
+                        <p class="info-creator"><span class="name-creator">Terry Richardson</span><br><span class="created-date">2
+                                weeks ago</span></p>
+                    </td>
+                    <td><span class="course-status">DRAFT</span></td>
+                    <td><span class="course-slot">0</span></td>
+                    <td><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img src="img/divide.svg"><a
+                            href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></td>
+                </tr>
+                <tr>
+                    <td class="course-photo-column"><img class="course-photo" src="./img/photo-course-05.png"></td>
+                    <td><span class="course-name">Color Theory #1</span><br><br><span class="course-code">Code:
+                            ART001899</span> </td>
+                    <td><span class="course-category"> Art / Digital</span></td>
+                    <td class="course-creator-column"><img class="avatar-creator" src="img/avatar-creator.png">
+                        <p class="info-creator"><span class="name-creator">Terry Richardson</span><br><span class="created-date">2
+                                weeks ago</span></p>
+                    </td>
+                    <td><span class="course-status active">LIVE</span></td>
+                    <td><span class="course-slot active">4</span></td>
+                    <td><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img src="img/divide.svg"><a
+                            href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
 </body>
+
 </html>
