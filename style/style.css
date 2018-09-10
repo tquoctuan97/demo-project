@@ -55,6 +55,7 @@ a {
     color: #4a90e2;
     font-size: 3em;
     margin-right: 40px;
+    cursor: pointer;
 }
 
 .menu .list-menu {
@@ -70,10 +71,13 @@ a {
     height: 100%;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .menu-item:hover {
-    border-bottom: #4a90e2 solid 3px;
+    -webkit-box-shadow:inset 0px -4px 0px 0px #4a90e2;
+    -moz-box-shadow:inset 0px -4px 0px 0px #4a90e2;
+    box-shadow:inset 0px -4px 0px 0px #4a90e2;
 }
 
 .menu-item a {
@@ -97,7 +101,9 @@ a {
 }
 
 .btn-search,
-.btn-notification {}
+.btn-notification {
+    cursor: pointer;
+}
 
 .btn-notification {
     position: relative;
@@ -194,6 +200,7 @@ a {
     font-weight: 500;
     font-size: 18px;
     border-style: none;
+    cursor: pointer;
 }
 
 /* Table flex */
@@ -480,18 +487,24 @@ a {
     .col-action {
         display: none;
     }
+
     .col-slot {
         justify-content: flex-end;
     }
+
     .col-status {
         justify-content: center;
     }
+
     .info-creator {
         text-align: left;
     }
-    .course-status, .course-slot {
-        padding:5px 7px;
+
+    .course-status,
+    .course-slot {
+        padding: 5px 7px;
     }
+
     /* .divide {
         display: none;
     }
