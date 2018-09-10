@@ -171,6 +171,7 @@ a {
     line-height: 180%;
     font-style: italic;
     color: #8c8c8c;
+    font-size:18px;
 }
 
 .info-create-right {
@@ -250,7 +251,7 @@ a {
 
 .col-action {
     flex: 1 2 16.666%;
-    /* min-width: 50px; */
+    max-width: 134px;
 }
 
 .heading {
@@ -272,9 +273,13 @@ a {
     font-weight: bold;
     color: #252525;
 }
-
+.course-code, .course-category {
+    color:#8c8c8c;
+    font-size:22px;
+}
 .course-status,
 .course-slot {
+    font-size: 14px;
     border-radius: 5px;
     padding: 0.5vw 0.7vw;
     color: #252525;
@@ -297,21 +302,28 @@ a {
 }
 
 .name-creator {
+    font-size:22px;
     color: #252525;
 }
 
 .created-date {
     font-size: 18px;
+    color: #8c8c8c;
 }
 
 /* Style course status */
 .course-action {
-    margin: 10px;
     max-width: 100%;
+}
+#btn-edit {
+    margin-right:24px;
+}
+#btn-earse {
+    margin-left:28px;
 }
 
 .loading-more {
-    margin: 50px 0px;
+    margin: 174px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
