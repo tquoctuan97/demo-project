@@ -97,9 +97,7 @@ a {
 }
 
 .btn-search,
-.btn-notification {
-   
-}
+.btn-notification {}
 
 .btn-notification {
     position: relative;
@@ -427,6 +425,17 @@ a {
     .info-create-left {
         display: none;
     }
+    .create-course {
+        min-height: 0;
+    }
+    .info-create-right {
+        align-items: center;
+    }
+    .info-create-right .btn-create-course {
+        width: 250px;
+        height: 50px;
+        font-size:16px;
+    }
     .table * {
         font-size: 12px;
     }
@@ -443,7 +452,6 @@ a {
     .menu-responsive {
         padding-left: 0;
     } */
-
     .menu .btn {
         justify-content: space-between;
     }
@@ -451,5 +459,23 @@ a {
     .number-notification {
         left: 10px;
         top: -10px;
+    }
+}
+
+@media (max-width:320px) {
+    .info {
+        font-size: 11px;
+    }
+    .menu .logo {
+        font-size: 24px;
+    }
+    .btn img {
+        width: 24px;
+    }
+    .menu-responsive {
+        font-size: 24px;
+    }
+    .number-notification {
+        font-size: 10px;
     }
 }
