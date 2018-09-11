@@ -9,7 +9,7 @@ a {
 }
 
 .center {
-    padding: 0 10vw;
+    padding: 0 11vw;
 }
 
 /* Style top (information & menu bar)*/
@@ -50,7 +50,7 @@ a {
 /*2. Style menu bar*/
 .menu {
     display: flex;
-    height: 7em;
+    height: 110px;
     background-color: #ffffff;
     justify-content: center;
     align-items: center;
@@ -60,10 +60,10 @@ a {
 .menu .logo {
     flex: 1;
     font-weight: 900;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     color: #4a90e2;
-    font-size: 3em;
-    margin-right: 40px;
+    font-size: 45px;
+    margin-right: 46px;
     cursor: pointer;
 }
 
@@ -147,7 +147,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
-    height: 55vh;
+    height: 52vh;
     color: #f0e9e1;
     display: flex;
     flex-direction: column;
@@ -296,6 +296,9 @@ a {
     color: #8c8c8c;
     font-size: 22px;
 }
+.course-code {
+    margin-top:1vw;
+}
 
 .course-status,
 .course-slot {
@@ -327,6 +330,7 @@ a {
 }
 
 .created-date {
+    padding-top:13px;
     font-size: 18px;
     color: #8c8c8c;
 }
@@ -574,11 +578,11 @@ a {
     }
 
     .title-course {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .info-course {
-        font-size: 16px;
+        font-size: 24px;
     }
 
     .line {
