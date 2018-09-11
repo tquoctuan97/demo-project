@@ -22,13 +22,15 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 38px;
-    font-size:18px;
+    font-size: 18px;
     font-weight: 500;
 }
+
 .info-right p {
     position: relative;
     margin-right: 21px;
 }
+
 .info-right .hello {
     color: #d9e7f8;
 }
@@ -38,11 +40,11 @@ a {
 }
 
 .info-right .info-more {
-    margin-left:11px;
+    margin-left: 11px;
     color: #ffffff;
     position: absolute;
-    top:-4px;
-    right:-20px;
+    top: -4px;
+    right: -20px;
 }
 
 /*2. Style menu bar*/
@@ -82,9 +84,9 @@ a {
 }
 
 .menu-item:hover {
-    -webkit-box-shadow:inset 0px -4px 0px 0px #4a90e2;
-    -moz-box-shadow:inset 0px -4px 0px 0px #4a90e2;
-    box-shadow:inset 0px -4px 0px 0px #4a90e2;
+    -webkit-box-shadow: inset 0px -4px 0px 0px #4a90e2;
+    -moz-box-shadow: inset 0px -4px 0px 0px #4a90e2;
+    box-shadow: inset 0px -4px 0px 0px #4a90e2;
 }
 
 .menu-item a {
@@ -227,7 +229,7 @@ a {
 .col-action {
     display: flex;
     text-align: left;
-    padding: 32px 0px;  
+    padding: 32px 0px;
     padding-right: 10px;
     justify-content: flex-start;
     align-items: center;
@@ -433,6 +435,11 @@ a {
         font-size: 12px;
     }
 
+    .info-more {
+        top: -2px !important;
+        right: -20px !important;
+    }
+
     .info-create-left {
         font-size: 14px;
     }
@@ -465,6 +472,7 @@ a {
     .center {
         padding: 0 5vw;
     }
+
     .info-create-left {
         display: none;
     }
@@ -473,9 +481,9 @@ a {
         min-height: 0;
     }
 
-    .flex-row-table:nth-child(even) {
+    /* .flex-row-table:nth-child(even) {
         background: #f9f9f9;
-    }
+    } */
 
     .table * {
         font-size: 12px;
