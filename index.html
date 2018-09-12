@@ -42,7 +42,17 @@
           <img src="img/notification.svg">
           <span class="number-notification">12</span>
         </div>
-        <i class="fas fa-bars menu-responsive"></i>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">My Courses</a>
+          <a href="#">My Bookings</a>
+          <a href="#">Dashboard</a>
+          <a href="#">How it Works</a>
+          <a href="#">All Courses</a>
+          <a href="#">Blog</a>
+          <a href="#">Course Leads</a>
+        </div>
+        <span onclick="openNav()"><i class="fas fa-bars menu-responsive"></i></span>
       </div>
     </nav>
   </header>
@@ -81,8 +91,8 @@
         </div>
         <div class="col-status"><span class="course-status">DRAFT</span></div>
         <div class="col-slot"><span class="course-slot">0</span></div>
-        <div class="col-action"><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img class="divide"
-            src="img/divide.svg"><a href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></div>
+        <div class="col-action"><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img
+            class="divide" src="img/divide.svg"><a href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></div>
       </div>
       <div class="flex-row-table">
         <div class="col-photo"><img src="./img/photo-course-02.png"></div>
@@ -95,8 +105,8 @@
         </div>
         <div class="col-status"><span class="course-status active">LIVE</span></div>
         <div class="col-slot"><span class="course-slot active">12</span></div>
-        <div class="col-action"><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img class="divide"
-            src="img/divide.svg"><a href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></div>
+        <div class="col-action"><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img
+            class="divide" src="img/divide.svg"><a href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></div>
       </div>
       <div class="flex-row-table">
         <div class="col-photo"><img src="./img/photo-course-03.png"></div>
@@ -109,22 +119,22 @@
         </div>
         <div class="col-status"><span class="course-status active">LIVE</span></div>
         <div class="col-slot"><span class="course-slot active">4</span></div>
-        <div class="col-action"><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img class="divide"
-            src="img/divide.svg"><a href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></div>
+        <div class="col-action"><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img
+            class="divide" src="img/divide.svg"><a href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></div>
       </div>
       <div class="flex-row-table">
         <div class="col-photo"><img src="./img/photo-course-04.png"></div>
         <div class="col-course-name"><span class="course-name">Fashion Style Making Up</span><span class="course-code">Code:
             ART001899</span></div>
-        <div class="col-category"><span class="course-category">Art / Beautyy</span></div>
+        <div class="col-category"><span class="course-category">Art / Beauty</span></div>
         <div class="col-creator-and-date"><img class="avatar-creator" src="img/avatar-creator.png">
           <p class="info-creator"><span class="name-creator">Terry Richardson</span><br><span class="created-date">2
               weeks ago</span></p>
         </div>
         <div class="col-status"><span class="course-status">DRAFT</span></div>
         <div class="col-slot"><span class="course-slot">0</span></div>
-        <div class="col-action"><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img class="divide"
-            src="img/divide.svg"><a href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></div>
+        <div class="col-action"><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img
+            class="divide" src="img/divide.svg"><a href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></div>
       </div>
       <div class="flex-row-table">
         <div class="col-photo"><img src="./img/photo-course-05.png"></div>
@@ -137,12 +147,23 @@
         </div>
         <div class="col-status"><span class="course-status active">LIVE</span></div>
         <div class="col-slot"><span class="course-slot active">4</span></div>
-        <div class="col-action"><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img class="divide"
-            src="img/divide.svg"><a href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></div>
+        <div class="col-action"><a href="#edit"><img class="course-action" id="btn-edit" src="./img/edit.svg"></a><img
+            class="divide" src="img/divide.svg"><a href="#earse"><img class="course-action" id="btn-earse" src="./img/earse.svg"></a></div>
       </div>
     </div>
   </section>
   <p class="loading-more center"><img src="./img/loading.svg"> Loading more Courses</p>
+  <script>
+    /* Open the sidenav */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    /* Close/hide the sidenav */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
 </body>
 
 </html>
