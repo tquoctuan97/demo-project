@@ -1,3 +1,6 @@
+:root {
+    font-size: 18px;
+}
 * {
     padding: 0;
     margin: 0;
@@ -9,7 +12,7 @@ a {
 }
 
 .center {
-    padding: 0 11vw;
+    padding: 0 14vw;
 }
 
 /* Style top (information & menu bar)*/
@@ -21,8 +24,8 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 38px;
-    font-size: 18px;
+    height: 28px;
+    font-size: 0.75rem;
     font-weight: 500;
 }
 
@@ -50,7 +53,7 @@ a {
 /*2. Style menu bar*/
 .menu {
     display: flex;
-    height: 110px;
+    height: 84px;
     background-color: #ffffff;
     justify-content: center;
     align-items: center;
@@ -62,7 +65,7 @@ a {
     font-weight: 900;
     letter-spacing: -1px;
     color: #4a90e2;
-    font-size: 45px;
+    font-size: 1.875rem;
     margin-right: 46px;
     cursor: pointer;
 }
@@ -87,10 +90,12 @@ a {
     -webkit-box-shadow: inset 0px -4px 0px 0px #4a90e2;
     -moz-box-shadow: inset 0px -4px 0px 0px #4a90e2;
     box-shadow: inset 0px -4px 0px 0px #4a90e2;
+    transition: transform 0.25s ease-out;
+    transform-origin: bottom right;
 }
 
 .menu-item a {
-    font-size: 20px;
+    font-size: 1rem;
     color: #2c2c2c;
     font-weight: 500;
     display: flex;
@@ -126,7 +131,7 @@ a {
     padding: 2px 6px;
     position: absolute;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     border-radius: 10px;
     left: 10px;
@@ -137,7 +142,7 @@ a {
 .menu-responsive {
     display: none;
     margin-left: 35px;
-    font-size: 2em;
+    font-size: 29px;
     color: #4a90e2;
 }
 
@@ -147,7 +152,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
-    height: 52vh;
+    height: 40vh;
     color: #f0e9e1;
     display: flex;
     flex-direction: column;
@@ -155,14 +160,14 @@ a {
 }
 
 .title-course {
-    font-size: 60px;
+    font-size: 2.66rem;
     font-weight: 300;
 }
 
 .info-course {
     padding: 10px 0;
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: 1rem;
 }
 
 .line {
@@ -175,7 +180,7 @@ a {
 /* Style create course*/
 .create-course {
     display: flex;
-    min-height: 25vh;
+    min-height: 18vh;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -188,7 +193,7 @@ a {
     line-height: 180%;
     font-style: italic;
     color: #8c8c8c;
-    font-size: 18px;
+    font-size: 0.75rem;
 }
 
 .info-create-right {
@@ -209,7 +214,7 @@ a {
     border-radius: 10px;
     color: #ffffff;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 0.75rem;
     border-style: none;
     cursor: pointer;
 }
@@ -229,7 +234,7 @@ a {
 .col-action {
     display: flex;
     text-align: left;
-    padding: 32px 0px;
+    padding: 25px 0px;
     padding-right: 10px;
     justify-content: flex-start;
     align-items: center;
@@ -272,7 +277,7 @@ a {
 }
 
 .heading {
-    font-size: 20px;
+    font-size: 0.833rem;
     text-align: left;
     padding: 18px 18px 8px 0px;
     color: #808080;
@@ -281,12 +286,12 @@ a {
 }
 
 .col-photo img {
-    max-width: 100%;
-    height: auto;
+    width: 82px;
+    height: 82px;
 }
 
 .course-name {
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: bold;
     color: #252525;
 }
@@ -294,15 +299,15 @@ a {
 .course-code,
 .course-category {
     color: #8c8c8c;
-    font-size: 22px;
+    font-size: 0.916rem;
 }
 .course-code {
-    margin-top:1vw;
+    margin-top:0.5vw;
 }
 
 .course-status,
 .course-slot {
-    font-size: 14px;
+    font-size: 0.583rem;
     border-radius: 5px;
     padding: 0.5vw 0.7vw;
     color: #252525;
@@ -325,13 +330,13 @@ a {
 }
 
 .name-creator {
-    font-size: 22px;
+    font-size: 0.916rem;
     color: #252525;
 }
 
 .created-date {
     padding-top:13px;
-    font-size: 18px;
+    font-size: 0.75rem;
     color: #8c8c8c;
 }
 
@@ -354,7 +359,7 @@ a {
     justify-content: center;
     align-items: center;
     color: #b4bcc3;
-    font-size: 20px;
+    font-size: 0.833rem;
 }
 
 .loading-more img {
@@ -390,7 +395,7 @@ a {
 
 @media (max-width:1184px) {
     .table * {
-        font-size: 14px;
+        font-size: 0.583rem;
     }
 }
 
@@ -422,7 +427,7 @@ a {
         border-radius: 10px;
         color: #ffffff;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 0.583rem;
     } */
 }
 
@@ -445,7 +450,7 @@ a {
     }
 
     .info-create-left {
-        font-size: 14px;
+        font-size: 0.583rem;
     }
 
     .heading {
@@ -458,7 +463,11 @@ a {
     }
 }
 
-@media (max-width:666px) {
+@media (max-width:768px) {
+    .center {
+        padding: 0 4vw;
+    }
+
     .col-category {
         display: none;
     }
@@ -473,10 +482,6 @@ a {
 }
 
 @media (max-width:411px) {
-    .center {
-        padding: 0 5vw;
-    }
-
     .info-create-left {
         display: none;
     }
@@ -570,7 +575,7 @@ a {
     }
 
     .menu-responsive {
-        font-size: 24px;
+        font-size: 1rem;
     }
 
     .number-notification {
@@ -582,7 +587,7 @@ a {
     }
 
     .info-course {
-        font-size: 24px;
+        font-size: 1rem;
     }
 
     .line {
